@@ -10,7 +10,7 @@ project:
 pm:
   linear:
     team_key: CONN
-    project_id: TBD  # Will be set after Linear project creation
+    project_id: 05a2339a-caa4-4589-954b-be0c8bd9e01f  # Will be set after Linear project creation
     api_endpoint: https://api.linear.app/graphql
     assignee_id: 1cfd43d4-eea8-4047-b9cc-75fbff5f8853     # Carlo AI
     subscriber_id: 4b2fea05-6139-4356-9646-74ea199a8de3    # Manolo

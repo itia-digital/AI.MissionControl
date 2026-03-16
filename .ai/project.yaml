@@ -1,0 +1,48 @@
+# .ai/project.yaml — AI.MissionControl Project Manifest
+# Standard: Engineering/AgenticAI/Project Manifest Standard.md
+
+project:
+  name: AI.MissionControl
+  team: CONN
+  type: full
+  description: Mission Control dashboard for AI agent visibility — team status, pipeline progress, costs, monitoring
+
+pm:
+  linear:
+    team_key: CONN
+    project_id: TBD  # Will be set after Linear project creation
+    api_endpoint: https://api.linear.app/graphql
+    assignee_id: 1cfd43d4-eea8-4047-b9cc-75fbff5f8853     # Carlo AI
+    subscriber_id: 4b2fea05-6139-4356-9646-74ea199a8de3    # Manolo
+    owner_id: 4b2fea05-6139-4356-9646-74ea199a8de3         # Manolo
+
+repos:
+  - name: AI.MissionControl
+    path: ~/Workspace/AI.MissionControl
+    github: itia-digital/AI.MissionControl
+    label: MissionControl
+    default_branch: master
+    development_branch: development
+
+roles:
+  orchestrator:
+    name: Carlo
+    model: opus
+  implementer:
+    agents:
+      - name: Benito
+        model: codex
+      - name: Mary K
+        model: sonnet
+  reviewer:
+    name: Carlo
+    model: opus
+  qa:
+    name: Lupe
+    model: flash
+
+stack:
+  frontend: React + TypeScript + Tailwind CSS
+  bundler: Vite
+  api: REST (Linear, GitHub, OpenClaw)
+  hosting: TBD
